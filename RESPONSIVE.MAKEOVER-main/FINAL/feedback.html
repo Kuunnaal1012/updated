@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedbacks</title>
+    <link rel="stylesheet" href="feed.css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <header>
+    <div class ="mob-head">
+      <img src="LOGO1.png" alt="" height="30px" width="30px">
+      <h3>MAKEOVERBYKEERTI</h3>
+    </div>
+      <img class="mob-open" src="./src/svg/open.svg" alt="openSvg" />
+      <div class="mob-wrapper close">
+        <img src="./src/svg/close.svg" class="mob-close" alt="closeSvg" />
+        <div class="mob-list">
+         
+          <a href="#home" class="mob-list__item">HOME</a>
+          <a href="#" class="mob-list__item">ABOUT</a>
+          <a href="#service" class="mob-list__item">SERVICES</a>
+          <a href="#" class="mob-list__item">LOCATION</a>
+        </div>
+      </div>
+  
+</div>
+</header>
+    <form action="mailto:kunalkhandale3132@gmail.com">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback"></textarea><br><br>
+        
+        <input type="submit" value="Submit">
+      </form>
+      
+      <p id="thankyou" style="display:none">Thank you for your feedback!</p>
+      
+      <script>
+        // JavaScript code to show the "Thank you" message when the form is submitted
+        var form = document.querySelector("form");
+        form.addEventListener("submit", function(event) {
+          event.preventDefault();
+          document.getElementById("thankyou").style.display = "block";
+        });
+      </script>
+      
+</body>
+</html>
